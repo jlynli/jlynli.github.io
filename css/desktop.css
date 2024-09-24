@@ -1,0 +1,394 @@
+/* colors used:
+off white: rgb(251,228,230)
+scarlet red: rgb(209,32,47) */
+
+
+/* HIDE THIS LATER!!!! */
+/* .col-md-1,
+.col-md-12,
+.col-md-6,
+.col-md-4
+.col-md-8{ */
+    /* border:solid 1px red;  */
+
+/* }  */
+
+
+body{
+    margin:0px;
+    padding: 0px;
+    background-color: black;
+    color: rgba(251,228,230,255);
+    font-family: header;
+}
+
+#wrap{
+    margin : 0 auto;
+    color : white;
+
+}
+
+
+/* buttons under introduction on index */
+.fourButtonsContainer{
+    height: 48vh;
+    width: 98vw;
+    
+}
+
+.imageButton{
+    width: 45vw;
+    height: 25vw;
+
+    border-radius: 24px;
+    padding: 1vh;
+
+}
+
+.imageButtonContainer{
+    position: relative;
+    text-align: center;
+    color: rgba(251,228,230,255);
+
+    opacity: 0.3;
+    transition: 0.3s;
+
+    width: 45vw;
+    height: 25vw;
+    
+    /* border: solid; */
+}
+
+.buttonText{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    font-family: big;
+    font-size: 30px;
+
+}
+
+.fourButtonsContainer{
+    display: flex;
+
+    width: 95vw;
+
+    padding-left: 4vw;
+
+}
+
+#fourButtonsSection{
+    padding-bottom: 5vh;
+}
+
+/* name at top versions */
+#nameLogoContainer{
+    height: 90vh;
+    margin : 0 auto;
+    color : rgba(251,228,230,255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#nameLogoContainerSmall{
+    height: 15vh;
+    margin : 0 auto;
+    color : rgba(251,228,230,255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#name{
+    font-size: 100px;
+    text-align: center;
+}
+
+#nameSmall{
+    font-size: 50px;
+    text-align: center;
+}
+
+
+/* image and text on home page*/
+#indexImage{
+    width: 43vw;
+    height: auto;
+    border-radius: 12px;
+
+    align-items: center;
+    justify-self: center;
+}
+
+
+#hello{
+    font-family: big;
+    font-size: 30px;
+}
+
+#introText{
+    padding-left: 5%;
+    font-family: body;
+
+    align-self: center;
+}
+
+.imageButtonContainer:hover,
+.imageButtonContainer:focus {
+  opacity: 1;  
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  transform: translateY(-0.25em);
+
+}
+
+#introTextContainer{
+    display: flex;
+
+    width: 95vw;
+    
+
+    padding-left: 4.55vw;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+
+    
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+/* try hard time */
+#floatyBalloon{
+    height:25vh;
+    width: auto;
+
+    padding-right:2vw;
+}
+
+.floating {  
+    
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+ 
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, -0px); }    
+}
+
+
+
+
+/* nav list modifiers */
+
+nav ul{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+
+    display : flex; 
+    text-align: center;
+
+    width : 75%;
+    margin: 0 auto;
+
+    color : white;
+}
+
+nav ul li{
+    flex-grow: 1;
+    color : rgba(251,228,230,255);
+
+    font-size: 24px;
+}
+
+footer ul{
+    list-style: none;
+    font-size: 20px;
+}
+
+footer li{
+    margin:10px;
+
+    text-decoration: none;
+}
+
+footer{
+    display: flex;
+    color : white;
+ 
+    padding-top: 5vh;;
+    
+}
+
+#quickLinks{
+    flex-grow: 1;
+    color : white;
+}
+
+
+.noPadding
+{
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox */
+    box-sizing: border-box;
+    padding: 0px;
+}
+
+
+/* nav/footer special stufff */
+i{
+    margin-right: 1vw;
+}
+
+a:link{
+    color:rgba(251,228,230,255);
+    text-decoration: none;
+}
+
+a:visited{
+    color:rgba(251,228,230,255);
+    text-decoration: none;
+}
+
+a:hover{
+    color: rgba(209,32,47,255);
+    text-decoration: none;
+}
+
+a:active{
+    color:rgba(209,32,47,255);
+    text-decoration: none;
+}
+
+footer i{
+    font-size : 35pt;
+    color : rgba(251,228,230,255);
+}
+
+
+footer i:hover{
+    color: rgba(209,32,47,255);
+}
+
+/* accordion section */
+.accordion{
+
+    width: 90vw;
+
+    align-items: center;
+    justify-content: center;
+
+    margin: 2.5vw;
+
+    background-color: black;
+}
+
+#accordianContainer{
+
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+
+}
+
+.accordion-body{
+    font-family: body;
+    background-color:black;
+}
+
+
+/* DO NOT!!! MAKE THIS BIGGER!! WILL GO OFF SCREEN */
+.accordionContainer{
+    width: 80vw;
+}
+
+.accordion-button.collapsed{
+    color: rgb(209,32,47);
+    background-color: black;
+
+    font-size: 25px;
+}
+
+.accordion-button:not(.collapsed) {
+    color: rgb(209,32,47);
+    background-color: black;
+
+    font-size: 25px;
+}
+
+.accordion {
+    --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+    --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+#shortAccordionIntro{
+    font-size: 12px;
+    font-family: body;
+    color: rgb(251,228,230);
+    opacity: 0.5;
+}
+
+/* accordian section end */
+
+
+/* gallery flexing */
+.galleryContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.galleryGrid{
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    margin-right: 5vw;
+}
+
+.galleryGridItem{
+    width: 40vw;
+    height: auto;
+    padding: 5%;
+
+  }
+
+
+.my-footer .card {
+    flex-direction: column-reverse;
+}
+
+/* gallery link to contact page */
+.inParagraphLink:hover{
+    background-color:rgba(251,228,230,255);
+}
+
+#introTextContainerGallery{
+    display: flex;
+
+    width: 95vw;
+
+    padding-left: 4.55vw;
+    padding-top: 5vh;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.slightRightMargin{
+    margin-right: 2vw;
+}
+
+
+
