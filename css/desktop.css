@@ -351,16 +351,15 @@ footer i:hover{
     grid-template-columns: repeat(2, 1fr); /* Two columns */
     gap: 10px; /* Space between images */
     width: 100%;
-    max-width: 900px; /* Adjust the max width */
+    max-width: 1200px; /* Increased the max width to make images wider */
     margin: 0 auto;
 }
 
 .galleryGridItem img {
-    width: 100%; /* Image takes the full width of the container */
-    height: auto; /* Height adjusts to maintain aspect ratio */
-    object-fit: contain; /* Displays the full image without cropping */
+    width: 100%; /* Image takes full width of the container */
+    height: auto; /* Height adjusts automatically to maintain aspect ratio */
+    object-fit: contain; /* Ensures images are not cropped */
     border-radius: 5px; /* Optional: rounds the corners */
-    background-color: #f0f0f0; /* Optional: sets background color for padding area */
 }
 
     
