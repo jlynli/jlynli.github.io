@@ -350,10 +350,10 @@ footer i:hover{
 .galleryGrid {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Two columns */
-    gap: 10px; /* Space between images */
-    width: 100%; /* Make sure it fits on the screen */
-    max-width: 800px; /* Optional: Limit max width */
-    margin: 0 auto; /* Center the grid */
+    gap: 15px; /* Increase gap slightly for spacing */
+    width: 100%;
+    max-width: 1200px; /* Increase the max width to make the images bigger */
+    margin: 0 auto;
 }
 .galleryGridItem img {
     width: 100%; /* Ensure images take up the full width of their container */
