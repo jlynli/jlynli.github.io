@@ -347,22 +347,20 @@ footer i:hover{
     align-items: center;
 }
 
-.galleryGrid{
-    width: 90vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-
-    margin-right: 5vw;
+.galleryGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 10px; /* Space between images */
+    width: 100%; /* Make sure it fits on the screen */
+    max-width: 800px; /* Optional: Limit max width */
+    margin: 0 auto; /* Center the grid */
 }
-
-.galleryGridItem{
-    width: 40vw;
-    height: auto;
-    padding: 5%;
-
-  }
+.galleryGridItem img {
+    width: 100%; /* Ensure images take up the full width of their container */
+    height: auto; /* Keep the aspect ratio */
+    object-fit: cover;
+    border-radius: 5px; /* Optional: Rounding corners for nicer look */
+}
 
 
 .my-footer .card {
