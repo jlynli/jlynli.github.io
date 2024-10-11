@@ -352,7 +352,7 @@ footer i:hover{
     grid-template-columns: repeat(2, 1fr); /* Two columns */
     gap: 10px; /* Space between images */
     width: 100%; /* Make sure it fits on the screen */
-    max-width: 800px; /* Optional: Limit max width */
+    max-width: 1200px; /* Optional: Limit max width */
     margin: 0 auto; /* Center the grid */
 }
 .galleryGridItem img {
