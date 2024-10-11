@@ -349,9 +349,9 @@ galleryContainer {
 .galleryGrid {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Two columns */
-    gap: 10px; /* Space between images */
+    gap: 5px; /* Space between images */
     width: 100%;
-    max-width: 900px; /* Adjust the max width to control image size */
+    max-width: 1000px; /* Adjust the max width to control image size */
     margin: 0 auto;
 }
 
