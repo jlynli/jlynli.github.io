@@ -357,7 +357,7 @@ footer i:hover{
 
 .galleryGridItem img {
     width: 100%; /* Ensures the image fills the container width */
-    height: 300px; /* Set a uniform height for all images */
+    height: auto; /* Set height for all images */
     object-fit: cover; /* Crops the images to fit the container, preventing distortion */
     border-radius: 5px; /* Optional: rounds the corners */
 }
