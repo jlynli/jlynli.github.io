@@ -341,7 +341,7 @@ footer i:hover{
 
 
 /* gallery flexing */
-galleryContainer {
+.galleryContainer {
     display: flex;
     justify-content: center;
 }
@@ -349,18 +349,21 @@ galleryContainer {
 .galleryGrid {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Two columns */
-    gap: 5px; /* Space between images */
+    gap: 10px; /* Space between images */
     width: 100%;
-    max-width: 1200px; /* Adjust the max width to control image size */
+    max-width: 900px; /* Adjust the max width */
     margin: 0 auto;
 }
 
 .galleryGridItem img {
-    width: 100%; /* Image takes full width of the container */
-    height: auto; /* Height adjusts automatically to maintain aspect ratio */
-    object-fit: cover; /* Ensures images cover the container without distortion */
+    width: 100%; /* Image takes the full width of the container */
+    height: auto; /* Height adjusts to maintain aspect ratio */
+    object-fit: contain; /* Displays the full image without cropping */
     border-radius: 5px; /* Optional: rounds the corners */
+    background-color: #f0f0f0; /* Optional: sets background color for padding area */
 }
+
+    
 .my-footer .card {
     flex-direction: column-reverse;
 }
