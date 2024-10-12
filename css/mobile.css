@@ -394,5 +394,9 @@ footer i:hover{
     margin-right: 2vw;
 }
 
+.socialMediaIcons i {
+        font-size: 18px; /* Smaller icon size for mobile */
+}
+
 
 
