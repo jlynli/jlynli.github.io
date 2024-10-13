@@ -136,6 +136,12 @@ body{
     align-self: center;
 }
 
+#resumeTitle{
+    font-family: big;
+    font-size: 30px;
+    align-self: center;
+}
+
 .imageButtonContainer:hover,
 .imageButtonContainer:focus {
   opacity: 1;  
