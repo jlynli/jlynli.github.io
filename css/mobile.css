@@ -417,7 +417,7 @@ footer i:hover{
 }
 
 .pdf-iframe {
-    height: 70vh; /* Adjust height to fit better on mobile devices */
+    height: 40vh; /* Adjust height to fit better on mobile devices */
     aspect-ratio: 1/1.294; /* Keep standard resume aspect ratio */
     width: auto; /* Width adjusts according to the aspect ratio */
     max-width: 100%; /* Prevents overflow on smaller screens */
@@ -425,13 +425,5 @@ footer i:hover{
     display: block;
     margin: 0 auto; /* Center-align the iframe */
 }
-
-@media (max-width: 600px) { /* Adjust for mobile devices */
-    .pdf-iframe {
-        height: 50vh; /* Reduce height for smaller screens */
-        aspect-ratio: 1/1.5; /* Adjust aspect ratio for better fit */
-    }
-}
-
 
 
