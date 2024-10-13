@@ -410,5 +410,11 @@ footer i:hover{
         font-size: 20px; /* Smaller icon size for mobile */
 }
 
+.pdf-iframe {
+    width: 100%;
+    height: 800px; /* Adjust this value as needed for the PDF's height */
+    border: none;
+}
+
 
 
