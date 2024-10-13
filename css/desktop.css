@@ -394,5 +394,10 @@ footer i:hover{
     aspect-ratio: 16/9; /* Keeps the original 16:9 aspect ratio */
 }
 
+/* Specific styling for PDF embeds */
+.pdf-embed {
+    aspect-ratio: 4/3; /* Adjust this aspect ratio to make the PDF taller */
+}
+
 
 
