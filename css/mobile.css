@@ -131,6 +131,12 @@ body{
     font-size: 30px;
 }
 
+#resumeTitle{
+    font-family: big;
+    font-size: 30px;
+    align-self: center;
+}
+
 #introText{
     padding-left: 5%;
     font-family: body;
