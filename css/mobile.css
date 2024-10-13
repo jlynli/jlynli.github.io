@@ -417,7 +417,7 @@ footer i:hover{
 }
 
 .pdf-iframe {
-    height: 100vh; /* Fit to the screen height */
+    height: 800px; /* Fit to the screen height */
     width: auto; /* Width adjusts according to the aspect ratio */
     border: none;
     display: block;
