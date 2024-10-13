@@ -412,7 +412,6 @@ footer i:hover{
 
 .pdf-iframe {
     height: 100vh; /* Fit to the screen height */
-    aspect-ratio: 1/1.294; /* Reflects standard resume aspect ratio */
     width: auto; /* Width adjusts according to the aspect ratio */
     border: none;
     display: block;
