@@ -15,6 +15,10 @@ scarlet red: rgb(209,32,47) */
 
 #subtitle {
     margin: 0;
+    padding-left: 5%;
+    font-family: body;
+
+    align-self: center;
 }
 
 body{
