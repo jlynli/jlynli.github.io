@@ -13,6 +13,9 @@ scarlet red: rgb(209,32,47) */
 
 /* }  */
 
+#subtitle {
+    margin: 0;
+}
 
 body{
     margin:0px;
