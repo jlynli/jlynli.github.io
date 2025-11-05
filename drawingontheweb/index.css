@@ -94,10 +94,11 @@
     transform: scale(1.05);
   }
 
-  .instructions{
+.instructions {
     position: fixed;
-    top: 1vh;
-    right: 1vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     max-width: 100vw;
     padding: 12px;
     border-radius: 8px;
@@ -106,7 +107,8 @@
     color: rgba(255, 255, 255, 0.806);
     z-index: 1000;
     text-align: center;
-  }
+}
+
 
   audio{
     position: fixed;
@@ -116,4 +118,5 @@
     opacity: 0.5;
     z-index: 10;
 }
+
 
