@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'bodyFont';
-  src: url(../../fonts/Montserrat.ttf);
+  src: url(Montserrat.ttf);
 }
 
 html, body {
@@ -94,4 +94,5 @@ html, body {
 
   
   
+
 
