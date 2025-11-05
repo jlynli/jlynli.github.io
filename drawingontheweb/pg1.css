@@ -1,0 +1,110 @@
+@font-face {
+  font-family: 'bodyFont';
+  src: url(../../fonts/Montserrat.ttf);
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  body {
+    background-image: url('sky.PNG');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  @keyframes float {
+    0% { transform: translateY(0) rotate(var(--rotation, 0deg)); }
+    50% { transform: translateY(-5px) rotate(calc(var(--rotation, 0deg) + 1deg)); }
+    100% { transform: translateY(0) rotate(var(--rotation, 0deg)); }
+
+    0%   { transform: translateX(0) skewX(0deg); }
+    25%  { transform: translateX(-3px) skewX(-0.3deg); }
+    50%  { transform: translateX(0) skewX(0deg); }
+    75%  { transform: translateX(3px) skewX(0.3deg); }
+    100% { transform: translateX(0) skewX(0deg); }
+  }
+
+  /* sway da grass */
+  @keyframes meadowSway {
+    0%   { transform: translateX(0) skewX(0deg); }
+    25%  { transform: translateX(-3px) skewX(-0.3deg); }
+    50%  { transform: translateX(0) skewX(0deg); }
+    75%  { transform: translateX(3px) skewX(0.3deg); }
+    100% { transform: translateX(0) skewX(0deg); }
+  }
+
+    
+  .meadow {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40vh; 
+
+    background-image: url('grass.PNG');
+    /* repeat horizontally here */
+    background-repeat: repeat-x; 
+    background-size: auto 100%; 
+    background-position: bottom left; 
+
+    animation: meadowSway 6s ease-in-out infinite;
+  }
+
+  
+  .flower {
+    /* width: 5vw;
+    height: auto; */
+
+    /* this part is so that flowers don't block new flowers and stuff */
+    pointer-events: none;
+
+    animation: float 3s ease-in-out infinite;
+  }
+
+  .instructions{
+    position: fixed;
+    top: 1vh;
+    right: 1vw;
+    max-width: 250px;
+    padding: 12px;
+    border-radius: 8px;
+    font-family: 'bodyFont';
+    font-size: 2vh;
+    color: rgba(255, 255, 255, 0.806);
+    z-index: 1000;
+    text-align: right;
+  }
+
+  .sun {
+    position: fixed;
+    top: 12vh;  
+    left: 10vw;
+    
+    height: 10vh;
+    width: auto;
+    z-index: 10;
+
+    pointer-events: auto;
+    transition: transform 0.2s ease;
+  }
+
+  .sun-link:hover .sun {
+    transform: scale(1.05);
+  }
+
+  audio{
+    position: fixed;
+    mix-blend-mode: darken;
+    top: 90%;
+    right: 0px;
+    opacity: 0.5;
+    z-index: 10;
+}
+
+
+  
