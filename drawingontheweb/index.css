@@ -1,0 +1,118 @@
+@font-face {
+    font-family: 'bodyFont';
+    src: url(../../fonts/Montserrat.ttf);
+  }
+  
+  html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+    }
+    
+    body {
+      background-image: url('bg2.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .meadow {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 40vh; 
+
+        z-index: 10;
+    
+        background-image: url('grass.PNG');
+        /* repeat horizontally here */
+        background-repeat: repeat-x; 
+        background-size: auto 100%; 
+        background-position: bottom left; 
+    
+        animation: meadowSway 6s ease-in-out infinite;
+      }
+  /* sway da grass */
+  @keyframes meadowSway {
+    0%   { transform: translateX(0) skewX(0deg); }
+    25%  { transform: translateX(-3px) skewX(-0.3deg); }
+    50%  { transform: translateX(0) skewX(0deg); }
+    75%  { transform: translateX(3px) skewX(0.3deg); }
+    100% { transform: translateX(0) skewX(0deg); }
+  }    
+
+.bubble {
+    position: fixed;
+    top: 40vh;  
+    left: 60vw;
+    
+    height: 15vh;
+    width: auto;
+    z-index: 1;
+
+    pointer-events: auto;
+    transition: transform 0.2s ease;
+  }
+
+  .bubble-link:hover .bubble {
+    transform: scale(1.05);
+  }
+  
+  .bird {
+    position: fixed;
+    top: 45vh;  
+    left: 35vw;
+    
+    height: 33vh;
+    width: auto;
+    z-index: 1;
+
+    pointer-events: auto;
+    transition: transform 0.2s ease;
+  }
+
+  .bird-link:hover .bird {
+    transform: scale(1.05);
+  }
+  
+  .sun {
+    position: fixed;
+    top: 26vh;  
+    left: 34vw;
+    
+    height: 15vh;
+    width: auto;
+    z-index: 10;
+
+    pointer-events: auto;
+    transition: transform 0.2s ease;
+  }
+
+  .sun-link:hover .sun {
+    transform: scale(1.05);
+  }
+
+  .instructions{
+    position: fixed;
+    top: 1vh;
+    right: 1vw;
+    max-width: 100vw;
+    padding: 12px;
+    border-radius: 8px;
+    font-family: 'bodyFont';
+    font-size: 2vh;
+    color: rgba(255, 255, 255, 0.806);
+    z-index: 1000;
+    text-align: center;
+  }
+
+  audio{
+    position: fixed;
+    mix-blend-mode: darken;
+    top: 90%;
+    right: 0px;
+    opacity: 0.5;
+    z-index: 10;
+}
